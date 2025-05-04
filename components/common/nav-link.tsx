@@ -1,7 +1,7 @@
 "use client";
-import Link from "next/link";
-import { cn } from "@/lib/utils";
-import { usePathname } from "next/navigation";
+import Link from "next/link"; // Next.js built-in component for client-side routing
+import { cn } from "@/lib/utils"; // Utility function (usually from tailwind-variants or custom) to conditionally join classNames
+import { usePathname } from "next/navigation"; // Hook to get the current URL pathname in App Router
 
 export default function NavLink({
   href,
@@ -14,7 +14,7 @@ export default function NavLink({
 }) {
   const pathname = usePathname();
   const isActive =
-    pathname === href || (href !== "/" && pathname.startsWith(href));
+    pathname === href || (href !== "/" && pathname.startsWith(href)); // for current and /about type thing but not for the home route 
   return (
     <Link
       href={href}
