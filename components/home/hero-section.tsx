@@ -13,11 +13,11 @@ export default function HeroSection() {
             className="relative px-6 py-2 text-base font-medium bg-white  rounded-full group-hover:bg-gray-50 transition-colors duration-200"
           >
             <Sparkles className="h-6 w-6 mr-2 text-rose-600 animate-pulse" />
-            <p className="text-base  text-rose-600">Powered By AI</p>
+            <p className="text-base text-[14px] text-rose-600">Powered By AI</p>
           </Badge>
         </div>
       </div>
-      <h1 className="font-bold py-6 text-center capitalize text-[24px] lg:text-[48px]">
+      <h1 className="font-bold     pt-6 pb-2 text-[24px] text-center capitalize lg:text-[36px]">
         Transform PDF's into{" "}
         <span className="relative inline-block">
           {/* /50 means we are reducing the opacity  */}
@@ -29,7 +29,7 @@ export default function HeroSection() {
         </span>
         summaries
       </h1>
-      <h2 className="text-lg sm:text-xl   lg:text-2xl text-center px-4 lg:px-0  lg:max-w-4xl  text-gray-600">
+      <h2 className="text-lg sm:text-xl   lg:text-[20px] text-center px-4 lg:px-0  lg:max-w-4xl text-[16px]  text-gray-600">
         Get a beautiful summary reel of the document in seconds.
       </h2>
       <Button
@@ -38,8 +38,10 @@ export default function HeroSection() {
         hover:from-rose-500 hover:to-slate-900 hover:no-underline font-medium shadow-lg  transition-all  duration-300"
       >
         {" "}
-        <Link href={"/#pricing"} className="flex gap-2 items-center">
-          <span>Try Docilo</span>
+        <Link href={"/#pricing"} className="flex gap-3 items-center">
+          <span className="text-[14px] lg:text-[16px] font-medium">
+            Try Docilo
+          </span>
           <ArrowRight className="animate-pulse" />
         </Link>
       </Button>
